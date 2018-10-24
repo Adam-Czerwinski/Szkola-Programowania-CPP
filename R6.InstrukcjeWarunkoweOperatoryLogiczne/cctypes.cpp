@@ -9,8 +9,8 @@ int main()
 	SetConsoleOutputCP(1250);
 	setlocale(LC_ALL, ".1250");
 
-	cout << "Podaj tekst do analizy, zakoñcz go, wpisuj¹c znak @.\n";
-	
+	cout << "Podaj tekst do analizy, zakoï¿½cz go, wpisujï¿½c znak @.\n";
+
 	char ch;
 	int whiteSpace{};
 	int digits{};
@@ -32,13 +32,12 @@ int main()
 		else others++;
 		cin.get(ch);
 	}
-	
+
 	cout << chars << " liter,\n"
 		<< whiteSpace << " spacji,\n"
 		<< digits << " cyfr,\n"
-		<< punct << " znaków przystankowych,\n"
-		<< others << " innych znaków.\n";
+		<< punct << " znakï¿½w przystankowych,\n"
+		<< others << " innych znakï¿½w.\n";
 
 	return 0;
 }
-

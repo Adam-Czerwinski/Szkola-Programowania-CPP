@@ -21,8 +21,8 @@ int main()
 		++total;
 		cin.get(ch);
 	}
-	
-	cout << "W zdaniu jest " << spaces << " spacji, a ³¹cznie " << total << " znaków.\n";
+
+	cout << "W zdaniu jest " << spaces << " spacji, a ï¿½ï¿½cznie " << total << " znakï¿½w.\n";
 
 	return 0;
 }
