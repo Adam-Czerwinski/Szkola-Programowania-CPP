@@ -4,8 +4,6 @@
 
 using namespace std;
 
-const int ArSize=80;
-
 int main()
 {
 
