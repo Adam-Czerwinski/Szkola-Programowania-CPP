@@ -16,21 +16,16 @@ int main()
   int i{};
   double total{};
 
-  for(i=0; i<ARRAY_SIZE;i++)
+  cout<<"Podaj datek "<<i+1<<": ";
+  while(i<ARRAY_SIZE && cin>>tab.at(i))
   {
-    cout<<"Datek "<<i+1<<": ";
-    while(!(cin>>tab.at(i)))
-    {
-      cin.clear();
-
-      while(cin.get()!='\n')
-        continue;
-      cout<<"Podaj liczbę!: ";
-    }
     total+=tab.at(i);
+
+    if(++i<ARRAY_SIZE)
+      cout<<"Podaj datek "<<i+1<<": ";
   }
 
-  cout<<"Średnia: "<<total/ARRAY_SIZE<<endl;
+  cout<<"Średnia: "<<total/i<<endl;
 
 	return 0;
 }
