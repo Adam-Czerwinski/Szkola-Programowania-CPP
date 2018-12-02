@@ -17,8 +17,8 @@ int main()
 		slowa++;
 		cin >> slowo;
 	}
-	cout << slowo << endl;
-	cout << "Ilosc wprowadzonych low: " << slowa << endl;
+
+	cout << "Ilosc wprowadzonych slow: " << slowa << endl;
 
 
 	return 0;

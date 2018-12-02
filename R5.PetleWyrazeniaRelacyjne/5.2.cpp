@@ -10,10 +10,10 @@ int main()
 	SetConsoleOutputCP(1250);
 	setlocale(LC_ALL, ".1250");
 
-	array<long double, 100> factorials;
-	factorials.at(0) = factorials.at(1) = 1;
+	array<long double, 101> factorials;
+	factorials.at(0) = factorials.at(1) = 1.0L;
 
-	for (int i = 2; i <= factorials.size(); i++)
+	for (int i = 2; i < factorials.size(); i++)
 	{
 		factorials.at(i) = factorials.at(i - 1)*i;
 		cout << i << "!: " << factorials.at(i) << endl;

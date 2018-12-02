@@ -1,9 +1,9 @@
 4
 Sam Stone
-2000
+2000.0
 Freida Flass
-10.5000
+100500
 Tammy Tubbs
-5000.2
+5000
 Rich Raptor
-55.000
+55000

@@ -16,7 +16,7 @@ int main()
 	
 	clock_t start = clock();
 
-	while ((clock() - start) < (timeIN*CLOCKS_PER_SEC));
+	while ((clock() - start) < (timeIN*CLOCKS_PER_SEC));		
 
 	cout << "koniec!";
 

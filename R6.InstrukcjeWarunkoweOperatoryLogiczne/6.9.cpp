@@ -17,6 +17,12 @@ int main()
   ifstream inFile;
   inFile.open("6.9.txt");
 
+  if (!inFile.is_open())
+  {
+	  cout << "Plik nie zosta³ poprawnie otwarty!";
+	  exit(EXIT_FAILURE);
+  }
+
   int liczbaWplacajacych;
   inFile>>liczbaWplacajacych;
   inFile.get();
@@ -26,7 +32,7 @@ int main()
   int i=0;
 
   //ALGORYTM
-  while(!inFile.eof())
+  while(inFile.good())
   {
     switch(linia)
     {

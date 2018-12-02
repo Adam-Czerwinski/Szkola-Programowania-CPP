@@ -9,10 +9,17 @@ int main()
 
   ifstream inFile;
   inFile.open("6.8.txt");
+
+  if (!inFile.is_open())
+  {
+	  cout << "Plik nie został poprawnie otwarty.";
+	  exit(EXIT_FAILURE);
+  }
+
   int znaki{};
 
   inFile.get();
-  while(!inFile.eof())
+  while(inFile.good())
   {
     znaki++;
     inFile.get();
