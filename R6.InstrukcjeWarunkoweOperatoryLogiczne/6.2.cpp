@@ -26,6 +26,7 @@ int main()
   }
 
   cout<<"Średnia: "<<total/i<<endl;
+  
 
 	return 0;
 }
